@@ -4,7 +4,9 @@
 //
 //  Created by Michael_Zuo on 2020/10/28.
 //  Copyright © 2020 Michael_Zuo. All rights reserved.
-//
+//  注：该方案有参考RAM注册section方案，如有侵权，请联系我删除
+//  注：该方案有参考RAM注册section方案，如有侵权，请联系我删除
+//  注：该方案有参考RAM注册section方案，如有侵权，请联系我删除
 //#if DEBUG
 
 #import <dlfcn.h>
