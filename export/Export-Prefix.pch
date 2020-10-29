@@ -1,0 +1,23 @@
+//
+//  Export-Prefix.pch
+//  export
+//
+//  Created by Michael_Zuo on 2020/10/29.
+//  Copyright © 2020 Michael_Zuo. All rights reserved.
+//
+
+#ifndef Export_Prefix_h
+#define Export_Prefix_h
+
+
+#import "MSRouterHelper.h"
+
+
+
+// 定义一个char 变量，变量名为 __ms_export_entry__[]，将__func__存储在__DATA.MSExport输入段中
+//used告诉编译器这段代码有用的，不要报警告
+// __func__当前所在函数名：类名+函数名
+// [https://blog.csdn.net/qq_42370291/article/details/103639349]
+#define MS_EXPORT() __attribute__((used, section("__DATA,MSExport" \
+))) static const char *__ms_export_entry__[] = { __func__}
+#endif /* Export_Prefix_h */
