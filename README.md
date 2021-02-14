@@ -1,0 +1,2 @@
+# delayRegisterRouter
+__attribute__section写入注册方法信息，达到后置路由注册效果
